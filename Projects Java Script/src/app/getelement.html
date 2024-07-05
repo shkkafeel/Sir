@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element by ID</title>
+</head>
+
+<body>
+    <div style="width: 100px; color: aliceblue; height: 100px; background-color: rgb(82, 72, 72);"></div>
+    <!-- <input type="text" id="apple"> -->
+    <script>
+
+        const div = document.querySelector('div');
+        console.log(div)
+        div.addEventListener('click', () => {
+            if(div.innerHTML == ''){
+                div.innerHTML = 'clicked'
+            } else {
+                div.innerHTML = ''
+            }
+        })
+
+        // let x = document.getElementById("apple");
+        // console.dir(x);
+        // x.value = 'helo'
+        // x.style.width = "50%"
+        // x.style.padding = '.5rem'
+
+        // let div = document.createElement('div');
+        // div.innerHTML = x.value;
+        // div.style.border = '1px solid red'
+        // div.style.width = '50%'
+        // document.body.append(div);
+
+        // const obj = {
+        //     names: ['kaheel', {
+        //         date:"12-14"
+        //     }],
+        //     rollno: 20,
+        //     fn() {
+        //         window.console.log('hi')
+        //     }
+        // }
+
+        // console.log(obj.fn())
+
+
+    </script>
+</body>
+
+</html>
