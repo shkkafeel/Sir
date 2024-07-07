@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case Advance Level</title>
+    <style>
+        td {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 15px 1.5px;
+            background-color: rgb(12, 42, 122);
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        body {
+            background-color: rgb(18, 58, 65);
+        }
+        h1 {
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Calculate</h1>
+
+    <table>
+        <tr>
+            <td onclick="Evaluate('+')">Press for Additon</td>
+        </tr>
+        <tr>
+            <td onclick="Evaluate('-')">Press for Subtraction</td>
+        </tr>
+        <tr>
+            <td onclick="Evaluate('*')">Press for Multiplication</td>
+        </tr>
+        <tr>
+            <td onclick="Evaluate('/')">Press for Division</td>
+        </tr>
+        <tr>
+            <td onclick="Evaluate('%')">Press for Modulo/Remainder</td>
+        </tr>
+    </table>
+    <br>
+
+    <form action="">
+        <input type="text" id="txtVal" placeholder="Enter First Number">
+        <input type="text" id="txtVal2" placeholder="Enter Second Number">
+        <input type="reset">
+    </form>
+
+    <script>
+
+
+        function Evaluate(x) {
+            console.log(x)
+            let num1 = document.getElementById('txtVal').value;
+            let num2 = document.getElementById("txtVal2").value;
+            console.log(num1, num2);
+            let n1 = parseInt(num1)
+            let n2 = parseInt(num2)
+
+
+            switch (x) {
+                case "+": {
+                    alert(" Addition of Two numbers = " + (n1 + n2))
+                }
+                case "-": {
+                    alert(" Subtraction of Two numbers = " + (n1 - n2))
+                }
+                case "*": {
+                    alert(" Multiplication of Two numbers = " + (n1 * n2))
+                }
+                case "/": {
+                    alert(" Division of Two numbers = " + (n1 / n2))
+                }
+                case "%": {
+                    alert(" Modulo of Two numbers = " + (n1 % n2))
+                }
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
