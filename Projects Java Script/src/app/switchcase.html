@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case Normal Level</title>
+    <style>
+        td {
+            color: aliceblue;
+            font-family: helvetica, arial, sans-serif;
+            padding: 15px 1.5px;
+            background-color: rgb(52, 52, 136);
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Program Menu</h1>
+
+    <table>
+        <tr>
+            <td>Enter 1 for Additon</td>
+        </tr>
+        <tr>
+            <td>Enter 2 for Subtraction</td>
+        </tr>
+        <tr>
+            <td>Enter 3 for Multiplication</td>
+        </tr>
+        <tr>
+            <td>Enter 4 for Division</td>
+        </tr>
+        <tr>
+            <td>Enter 5 for Modulo</td>
+        </tr>
+    </table>
+     <br>
+    <input type="text" id="input">
+    <input type="button" value="Evaluate" onclick="Evaluate()">
+    
+    <script>
+        let num1 = 30;
+        let num2 = 10;
+
+        function Evaluate() {
+            let val = document.getElementById("input").value
+            console.log(val)
+            switch(val){
+                case "1": {
+                    alert(num1 + num2)
+                }
+
+                case "2": {
+                    alert(num1 - num2)
+                }
+
+                case "3": {
+                    alert(num1 * num2)
+                }
+
+                case "4": {
+                    alert(num1 / num2)
+                }
+
+                case "5": {
+                    alert(num1 % num2)
+                }
+            }
+        }
+    </script>
+</body>
+</html>
